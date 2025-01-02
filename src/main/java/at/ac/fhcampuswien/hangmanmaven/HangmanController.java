@@ -18,9 +18,12 @@ public class HangmanController implements Initializable{
 
     private WordProvider wordProvider;
 
+    private GameLogic gameLogic;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         wordProvider = new WordProvider();
+
 
         categoryButton.getItems().addAll(wordProvider.getCategories());
     }
